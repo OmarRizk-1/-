@@ -5,6 +5,8 @@
 }
 body {
     font-family: "Work Sans", sans-serif;
+    background-image: linear-gradient(rgb(54, 27, 27), rgb(44, 43, 37));
+
 }
 .container {
     padding-left: 15px;
@@ -56,9 +58,11 @@ body {
 .header .links {
     position: absolute;
     right: 0;
+    animation: 3s;
 }
 .header .links a {
     padding: 5px;
+    font-size: 25px;
     margin-right: 10px;
     text-decoration: none;
     list-style: none;
@@ -74,3 +78,172 @@ body {
     font-weight: bold;
 }
 /* End Header */
+
+/* Start Landing */
+.landing {
+    height: calc(100vh - 130px);
+    background-image: linear-gradient(rgb(54, 27, 27), rgb(44, 43, 37));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    animation: omar 5s linear infinite normal both;
+}
+
+@keyframes omar {
+    25% {
+        background-image: linear-gradient(rgb(43, 23, 23), rgb(68, 67, 67), rgb(77, 77, 77), rgb(88, 66, 66));
+    }
+    50% {
+        background-image: linear-gradient(rgb(54, 45, 45), rgb(49, 34, 34), rgb(100, 43, 43), rgb(88, 66, 66));
+    }
+    75% {
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(66, 47, 47), rgb(48, 48, 48), rgb(88, 66, 66));
+    }
+    100% {
+        background-image: linear-gradient(rgb(37, 32, 32), rgb(77, 54, 54), rgb(54, 37, 37), rgb(88, 66, 66));
+    }
+}
+.landing h2 {
+    font-size: 50px;
+    font-weight: bold;
+    animation: omar2 5s linear infinite normal both;
+}
+@keyframes omar2 {
+    25% {
+      color: red;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: blue;
+    }
+    100% {
+        color: gold;
+    }
+}
+.landing h1 {
+    font-size: 50px;
+    color: gold;
+}
+
+.landing .n {
+    margin: 50px;
+    font-size: 20px;
+    color: rgba(238, 238, 238, 0.678);
+}
+.buttom {
+    padding: 10px;
+    height: 50px;
+    border-radius: 30px;
+    text-decoration: none;
+    list-style: none;
+    color: rgba(238, 238, 238, 0.726);
+    font-size: 30px;
+    background-image: linear-gradient(rgb(89, 240, 89), green);
+    
+}
+.intro-text i {
+    animation: omar1 2s linear infinite normal both;
+}
+@keyframes omar1 {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 0;
+    color: #eee;
+}
+
+/* Services */
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.srv {
+    background: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.srv:hover {
+    transform: translateY(-10px);
+}
+
+.srv i {
+    font-size: 40px;
+    color: red;
+    margin-bottom: 10px;
+}
+.srv .text p {
+    font-size: 20px;
+}
+.srv .text h3 {
+    font-size: 40px;
+    color: indigo;
+}
+
+/* About */
+.about-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: gold;
+    border: 3px solid gold;
+    border-radius: 20px;
+   background-image: linear-gradient( rgba(255, 255, 255, 0.219),black, rgba(255, 255, 255, 0.479), black);
+    margin-bottom: 100px;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 50px 0;
+    background: #eee;
+    border-radius: 20px;
+}
+.contact .section-title {
+    color: black;
+}
+.contact span a {
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.contact p i {
+   font-size: 30px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .landing h1 {
+        font-size: 30px;
+    }
+
+    .landing p {
+        font-size: 16px;
+    }
+}
